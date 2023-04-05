@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h2>S-N Travels</h2>
+
+
+
+    <form>
+        <div class="row mb-3 justify-content-center">
+          <label for="name1" class="col-sm-2 col-form-label">Full Name</label>
+          <div class="col-5">
+            <input type="text" class="form-control  " id="name1" placeholder="Enter your Name">
+            <small id="nameValid" class="form-text text-muted invalid-feedback">must not contain any special charachters or numbers</small>
+    
+          </div>
+          
+        </div>
+        <div class="row mb-3 justify-content-center">
+          <label for="name2" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-5">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <small id="emailValid" class="form-text text-muted invalid-feedback">must not contain any special charachters or numbers</small>
+          </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <label for="number3" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-5">
+              <input type="number" class="form-control" id="phone"placeholder="Enter your phone number">
+              <small id="phoneValid" class="form-text text-muted invalid-feedback">must start with 92 and should not be greater than or less than  12 charachters</small>
+            </div>
+          </div>
+        <div class="row mb-3 justify-content-center">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Address</label>
+            <div class="col-5">
+            <textarea class="form-control" aria-label="With textarea" id ="address"></textarea>
+          </div>
+        </div>
+
+        <div class="row mb-3 justify-content-center">
+            <label for="date"class = "col-2">Date to travel</label>
+            <div class="col-5">
+           <select class = "form-control "> 
+            <option value="1">1st Jan</option>
+            <option value="2">21st Jan</option>
+            <option value="3">5th Feb</option>
+            <option value="4">1st March</option>
+           </select>
+           </div>
+        </div>
+
+        <fieldset class="row mb-3 justify-content-center">
+          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+          <div class="col-5">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                FeMale
+              </label>
+            </div>
+            
+        </div>
+      
+
+          
+        <div class="row mb-3 mt-5 justify-content-center">
+            <div class="col-5 offset-sm-2">
+        <button type="submit" class="btn btn-primary" id="submit">Book</button>
+        </div>
+        </div>
+      </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
